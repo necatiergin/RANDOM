@@ -1,7 +1,6 @@
 #include <random>
 #include <iostream>
 #include <algorithm>
-#include <vector>
 #include <iterator>
 
 int main()
@@ -15,6 +14,6 @@ int main()
 	ivec.reserve(1000u);
 	generate_n(back_inserter(ivec), 1000u, [&]() {return dist(eng); });
 
-	for (auto i : ivec)
+	for (const int i : ivec)
 		cout << i << ' ';
 }
