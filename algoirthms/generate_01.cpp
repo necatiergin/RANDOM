@@ -12,6 +12,7 @@ int main()
 
 	vector<int> ivec(100);
 	generate(ivec.begin(), ivec.end(), [&]() {return dist(eng); });
-	for (auto i : ivec)
+	
+	for (const int i : ivec)
 		cout << i << ' ';
 }
