@@ -13,15 +13,17 @@ int main()
 
 	using namespace chrono;
 
-	auto tp1 = steady_clock::now();
+	const auto tp1 = steady_clock::now();
+	
 	for (size_t i = 0; i < ivec.size(); ++i)
 		ivec[i] = eng();
-	auto tp2 = steady_clock::now();
+	
+	const auto tp2 = steady_clock::now();
 
 	cout << duration_cast<microseconds>((tp2 - tp1)).count() << " mikrosaniye\n";
 
 	getchar();
 
-	for (auto uval : ivec)
-		cout << uval << ' ';
+	for (const auto uval : ivec)
+		cout << uval << '\n';
 }
