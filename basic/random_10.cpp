@@ -5,10 +5,10 @@ engine state comparison with == and != operators.
 #include <random>
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
+	using namespace std;
+	
 	mt19937 eng1, eng2;
 
 	cout << boolalpha << (eng1 == eng2) << '\n';
