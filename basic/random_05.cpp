@@ -1,3 +1,5 @@
+//random_device::entropy 
+
 #include <random>
 #include <iostream>
 
